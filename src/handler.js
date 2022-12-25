@@ -26,7 +26,7 @@ const handlerAddNotes = (request, h) => {
   if (isSuccess) {
     const response = h.response({
       status: 'success',
-      meesage: 'Catatan sucessfull created',
+      message: 'Catatan sucessfull created',
       data: {
         noteId: id,
       },
