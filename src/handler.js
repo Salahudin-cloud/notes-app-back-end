@@ -26,7 +26,7 @@ const handlerAddNotes = (request, h) => {
   if (isSuccess) {
     const response = h.response({
       status: 'success',
-      meesage: 'Catatan sucessfull updated',
+      meesage: 'Catatan sucessfull created',
       data: {
         noteId: id,
       },
@@ -38,7 +38,7 @@ const handlerAddNotes = (request, h) => {
   // jika gagal
   const response = h.response({
     status: 'fail',
-    message: 'Catatan failed to add',
+    message: 'Catatan failed to created',
   });
   response.code(500);
   return response;
